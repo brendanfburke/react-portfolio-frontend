@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: antiquewhite;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.footer {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 5em;
+}
+
+.header {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.header p {
+  margin: 0;
+  font-size: 5em;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  top: 20vh;
+  justify-content: center;
+}
+
+.navStyle {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightsteelblue;
+  color: white;
+  padding: 15px;
+  font-size: 1em;
+}
+
+.navStyle a {
+  color: blue;
+  text-decoration: none;
+}
+
+.project-image {
+  display: block;
+  max-width: 50vw;
+  max-height: 50vh;
+  width: auto;
+  height: auto;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
