@@ -8,18 +8,18 @@ const Projects = (props) => {
 
     const [projects, setProjects] = useState(null)
 
-    console.log(`${props.URL}projects`)
+    const backend = props.URL
 
     
-    useEffect((props) => {
+    useEffect(() => {
         const getProjectsData = async () => {
-            const response = await fetch(`${props.URL}projects`)
+            const response = await fetch(`${backend}projects`)
             const data = await response.json()
             console.log(data)
             setProjects(data)
         };
         getProjectsData()
-    }, [])
+    }, [backend])
 
 
 

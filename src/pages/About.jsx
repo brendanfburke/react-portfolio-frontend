@@ -5,18 +5,19 @@ const About = (props) => {
 
     const [about, setAbout] = useState(null)
 
-    console.log(`${props.URL}about`)
+
+    const backend = props.URL
 
     
     useEffect((props) => {
         const getAboutData = async () => {
-            const response = await fetch(`${props.URL}about`)
+            const response = await fetch(`${backend}about`)
             const data = await response.json()
             console.log(data)
             setAbout(data)
         };
         getAboutData()
-    }, [])
+    }, [backend])
 
 
 
