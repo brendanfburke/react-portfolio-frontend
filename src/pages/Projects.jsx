@@ -32,8 +32,8 @@ const Projects = (props) => {
                     return (
                         <div className="project">
                             <h2>{project.name}</h2>
-                            <a href={project.live} target="_blank" >Live Deployment</a>
-                            <a href={project.git} target="_blank" >Github</a>
+                            <a href={project.live}  >Live Deployment</a>
+                            <a href={project.git}  >Github</a>
                             <img className="project-image" src={project.image} alt={project.name} />
                         </div>
                     )
