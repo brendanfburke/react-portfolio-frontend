@@ -7,14 +7,14 @@ const About = (props) => {
 
     console.log(`${props.URL}about`)
 
-    const getAboutData = async () => {
-        const response = await fetch(`${props.URL}about`)
-        const data = await response.json()
-        console.log(data)
-        setAbout(data)
-    }
-
-    useEffect(() => {
+    
+    useEffect((props) => {
+        const getAboutData = async () => {
+            const response = await fetch(`${props.URL}about`)
+            const data = await response.json()
+            console.log(data)
+            setAbout(data)
+        };
         getAboutData()
     }, [])
 

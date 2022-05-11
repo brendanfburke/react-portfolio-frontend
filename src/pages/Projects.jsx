@@ -10,14 +10,14 @@ const Projects = (props) => {
 
     console.log(`${props.URL}projects`)
 
-    const getProjectsData = async () => {
-        const response = await fetch(`${props.URL}projects`)
-        const data = await response.json()
-        console.log(data)
-        setProjects(data)
-    }
-
-    useEffect(() => {
+    
+    useEffect((props) => {
+        const getProjectsData = async () => {
+            const response = await fetch(`${props.URL}projects`)
+            const data = await response.json()
+            console.log(data)
+            setProjects(data)
+        };
         getProjectsData()
     }, [])
 
